@@ -21,7 +21,7 @@ namespace Lab8Arrays
                     Console.WriteLine("Welcome to the Safari Zone, which Pokemon would you like to learn more about?\n(Enter a number from 1-20)");
                     string input = Console.ReadLine();
                     bool statement = int.TryParse(input, out int index);
-                    index -= 1;
+                    index --;
 
                     Console.WriteLine($"Pokemon {input} is {Name[index]}, would you like to know {Name[index]}'s Country(C), Favorite Food(F) or both(B)?");
 
